@@ -1,6 +1,14 @@
+import DonateForm from "./donate-form"
+import DonateList from "./donate-list"
 export default class App {
+	#donateForm
+	#donatelist
+	constructor() {
+		this.#donateForm = new DonateForm()
+		this.#donateList = new DonateList()
+	}
 	run() {
-		const Body = document.querySelector("body")
-		Body.innerHTML = "Hello World"
+		this.#donateForm.render()
+		this.#donateList.render()
 	}
 }

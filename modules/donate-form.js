@@ -3,7 +3,7 @@ export default class DonateForm {
 		const BodyQs = document.querySelector("body")
 
 		const formDonateForm = document.createElement("form")
-		donateForm.className = "donate-form"
+		formDonateForm.className = "donate-form"
 		BodyQs.append(formDonateForm)
 
 		const h1TotalAmount = document.createElement("h1")
@@ -23,6 +23,7 @@ export default class DonateForm {
 		inputDonateForm.max = "100"
 		inputDonateForm.min = "1"
 		inputDonateForm.required = ""
+		labelDonateForm.append(inputDonateForm)
 
 		const buttonDonateForm = document.createElement("button")
 		buttonDonateForm.className = "donate-form__submit-button"
